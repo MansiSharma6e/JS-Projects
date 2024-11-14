@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check weather of your city</title>
+    <style>
+        body{
+            display:grid;
+            justify-content: center;
+        }
+        h1{
+            color:green;
+            font-weight: bold;
+            font-size: 60px;
+        }
+        #btn{
+            padding:8px;
+            color:white;
+            background-color: green;
+        }
+        #input{
+            padding :10px;
+        }
+        .info{
+            margin-left: 120px;
+        }
+        .information{
+            flex-direction: column;
+            text-align: center;
+            padding-top: 20px;
+            margin-left: 100px;
+            width:29vw;
+            height:25vh;
+        }
+        .container{
+            padding:30px;
+            margin-right: 130px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Weather Information</u></h1>
+    <div class="info">
+        <input id="input" type="text" placeholder="where are you?">
+        <button id="btn">Click here!</button>
+    </div>
+    <div class ="container">
+    <div class="information">
+        <h2 id = place>dehradun</h2>
+        <h3>Expected weather conditions : <span id="weather">sunny</span></h3>
+        <h4 id="tempreature">36<span> deg C</span></h4>
+        </div>
+    </div>
+<script src = "check.js"></script>
+</body>
+</html>
